@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSC 235 Project 2</title>
+        <link
+            rel="stylesheet"
+            href="Styles/MyStyle.css" />
+        <script
+            src="js/javascript.js"
+            defer></script>
+    </head>
+    <body>
+        <!--game title-->
+        <h1>CSC 235 Game</h1>
+
+        <!--render pictures of two dice-->
+        <div class="dice_1">
+            <img
+                src="Photo/dice1.png"
+                id="dice1_1"
+                style="display: none"
+                alt="dice side 1" />
+            <img
+                src="Photo/dice2.png"
+                id="dice2_1"
+                style="display: none"
+                alt="dice side 2" />
+            <img
+                src="Photo/dice3.png"
+                id="dice3_1"
+                style="display: none"
+                alt="dice side 3" />
+            <img
+                src="Photo/dice4.png"
+                id="dice4_1"
+                style="display: none"
+                alt="dice side 4" />
+            <img
+                src="Photo/dice5.png"
+                id="dice5_1"
+                style="display: none"
+                alt="dice side 5" />
+            <img
+                src="Photo/dice6.png"
+                id="dice6_1"
+                style="display: none"
+                alt="dice side 6" />
+        </div>
+
+        <div class="dice_2">
+            <img
+                src="Photo/dice1.png"
+                id="dice1_2"
+                style="display: none"
+                alt="dice side 1" />
+            <img
+                src="Photo/dice2.png"
+                id="dice2_2"
+                style="display: none"
+                alt="dice side 2" />
+            <img
+                src="Photo/dice3.png"
+                id="dice3_2"
+                style="display: none"
+                alt="dice side 3" />
+            <img
+                src="Photo/dice4.png"
+                id="dice4_2"
+                style="display: none"
+                alt="dice side 4" />
+            <img
+                src="Photo/dice5.png"
+                id="dice5_2"
+                style="display: none"
+                alt="dice side 5" />
+            <img
+                src="Photo/dice6.png"
+                id="dice6_2"
+                style="display: none"
+                alt="dice side 6" />
+        </div>
+
+        <!--button for rolling-->
+        <div class="roll-button">
+            <button
+                class="roll"
+                type="button"
+                id="roll-button"
+                onclick="roll_dice()">
+                Roll Dice
+            </button>
+
+            <p class="counter">Roll Count: <span id="counter">0</span></p>
+            <p class="remaining-chips">
+                Remaining Chips: <span id="remaining-chips">10</span>
+            </p>
+        </div>
+
+        <!--button for game reset-->
+        <div class="reset-button">
+            <button
+                class="reset"
+                type="button"
+                onclick="reset_game()">
+                Reset Game
+            </button>
+        </div>
+
+        <!--boxes for game-->
+        <div
+            class="container"
+            id="container">
+            <div class="row1">
+                <button
+                    class="box"
+                    id="box-2">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-3">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-4">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-5">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-6">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-7">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+            </div>
+            <div class="row2">
+                <button
+                    class="box"
+                    id="box-8">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-9">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-10">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-11">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+                <button
+                    class="box"
+                    id="box-12">
+                    <span
+                        style="display: none"
+                        class="chip-count"
+                        >0</span
+                    >
+                </button>
+            </div>
+        </div>
+
+        <!--numbering for boxes-->
+        <div class="numbering">
+            <div class="num-top">
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+            </div>
+            <div class="num-bottom">
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+                <p>11</p>
+                <p>12</p>
+            </div>
+        </div>
+
+        <!--status output-->
+        <div class="status_box">
+            <p id="status-message">Start game</p>
+        </div>
+    </body>
+</html>

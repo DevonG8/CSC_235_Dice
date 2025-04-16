@@ -1,0 +1,170 @@
+body {
+    background-color: #cbc3e3;
+}
+
+h1 {
+    display: inline-block;
+    background-color: #af9fe1;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 5px;
+}
+
+.roll {
+    width: 70px;
+    height: 35px;
+    background-color: #af9fe1;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.reset {
+    background-color: #af9fe1;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.counter {
+    position: absolute;
+    top: 260px;
+    right: 270px;
+    border: 2px solid #af9fe1;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.remaining-chips {
+    position: absolute;
+    top: 300px;
+    right: 270px;
+    border: 2px solid #af9fe1;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: #af9fe1;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.row1 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+.row2 {
+    position: absolute;
+    top: 440px;
+    left: 200px;
+}
+
+.numbering {
+    display: inline-block;
+    position: absolute;
+}
+.num-top {
+    position: absolute;
+    top: 250px;
+    left: 165px;
+    display: flex;
+    gap: 106px;
+}
+.num-bottom {
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    display: flex;
+    gap: 105px;
+}
+
+.status_box {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    outline-style: dashed;
+}
+
+#dice1_1 {
+    width: 100px;
+    height: 98px;
+}
+
+#dice2_1 {
+    width: 98px;
+    height: 98px;
+}
+
+#dice3_1 {
+    width: 100px;
+    height: 98px;
+}
+
+#dice4_1 {
+    width: 98px;
+    height: 97px;
+}
+#dice5_1 {
+    width: 101px;
+    height: 98px;
+}
+#dice6_1 {
+    width: 98px;
+    height: 96px;
+}
+
+#dice1_2 {
+    width: 100px;
+    height: 98px;
+}
+
+#dice2_2 {
+    width: 98px;
+    height: 98px;
+}
+
+#dice3_2 {
+    width: 100px;
+    height: 98px;
+}
+
+#dice4_2 {
+    width: 98px;
+    height: 97px;
+}
+#dice5_2 {
+    width: 101px;
+    height: 98px;
+}
+#dice6_2 {
+    width: 98px;
+    height: 96px;
+}
+
+.dice_1 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+.dice_2 {
+    position: absolute;
+    top: 100px;
+    right: 330px;
+}
